@@ -1,0 +1,80 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+        
+}
+body {
+  background: #000;
+  image-rendering: pixelated;  
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+.hombre{
+    width: 112px;
+    height: 163px;
+    margin: auto;
+    background: url("uno-removebg-preview.png") repeat-x;
+    animation: real 1.5s steps(12) infinite;
+    position: relative;
+    bottom: 210px;
+}
+@keyframes real {
+    from { background-position: 0 }
+    to { background-position: -1300px }
+}
+.container{
+    height:443px;
+    background: url("fondo def.jpg") repeat-x;
+    animation: fon 9s linear infinite;
+    position: relative;
+    top:0px;
+}
+.estanque{
+    height:189px;
+    background: url("estanque.jpg") repeat-x;
+    animation: fon 9s linear infinite;
+    position: relative;
+    top: 436px;
+}
+@keyframes fon {
+    0% { background-position: 626px } 
+  100% { background-position: 0px }
+}
+.homdos{
+    height: 161px;
+    width: 112px;
+    background: url(tres.png) repeat-x;
+    position: absolute;
+    bottom: 239px;
+    animation: rrr 1.5s steps(12) infinite, rr 7s infinite linear;
+}
+.homtres{
+    height: 161px;
+    width: 100px;
+    background: url(dos.png) repeat-x;
+    position: absolute;
+    bottom: 239px;
+    animation: rrr 2s steps(11) infinite, rr 12s infinite linear;
+}
+@keyframes rrr{
+    from { background-position: 0 }
+    to { background-position: 1294px; }
+}
+@keyframes rr{
+    from { transform: translateX(100vw);}
+    to { transform: translateX(-150px); }
+}
+.sol{
+    height: 40px;
+    width: 40px;
+    background-color:yellow;
+    position: absolute;
+    top: -440px;
+    border-radius:50%;
+    animation:tt 50s infinite linear;
+}
+@keyframes tt{
+    from { transform: translateX(100vw);}
+    to { transform: translateX(-150px); }
+}
